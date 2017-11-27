@@ -23,7 +23,6 @@ Some "Gotchas":
 ```			
 probablySomeText.substring(4);
 mv.addObject("stringResult", probablySomeText); 
-
 ```
 
 * In the URLResult, the mustache is wrapped in an anchor href, so setting your view to URLFailure fixed this issue
