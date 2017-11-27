@@ -26,7 +26,8 @@ public class ExceptionHandlingController {
 		ModelAndView mv = new ModelAndView("exceptionHandling/default");
 
 		try {
-			mv.addObject("stringResult", probablySomeText.substring(4));
+			probablySomeText.substring(4);
+			mv.addObject("stringResult", probablySomeText);
 		} catch (StringIndexOutOfBoundsException sioobe) {
 			mv.addObject("stringResult", "string should be four characters");
 		}
